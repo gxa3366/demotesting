@@ -1,1 +1,9 @@
-
+name: test job
+on: push
+jobs:
+  Ex-Action-Job:
+    name: Explorinng Github Action
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "the job is triggered ${{github.event_name}}"
+  
